@@ -1,5 +1,9 @@
 #videobackground {
     position: fixed;
+    z-index: -1;
+    bottom: 0;
+    
+
     
     left: 0;
     width: 100%;
@@ -7,7 +11,7 @@
 .container {
     position: fixed;
     top: 0;
-    background-color: rgb(32, 27, 24);
+    
     color: aliceblue;
     text-align: left;
     font-family: sans-serif;
@@ -16,20 +20,41 @@
 }
 .live {
     display: inline-flex;
-    font-size: 23px;
+    font-size: 30px;
     margin: 20px;
-    color: yellow;
+    color: white;
 }
+.live:hover{
+    text-decoration: underline;
+    
+}
+
 .logo {
     size: 20px;
     width: 20px;
     height: 20px;
 }
 .textbox {
-    position: absolute;
-    display: block;
-    width: 70%;
     
+    text-align: center;
+}
+.textbox h1 {
+    font-size: 150px;
+    color: aliceblue;
+}
 
-    background-color: rgb(32, 27, 24);
+.textbox a {
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 60px;
+    border: 3px solid white;
+    padding: 20px 10px;
+    border-radius: 50px;
+}
+.textbox a:hover{
+    background-color: rgb(168, 168, 168);
+    border-color: gray;
+    color: black;
+    
 }
